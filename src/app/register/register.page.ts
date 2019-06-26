@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NavController, IonInput } from '@ionic/angular';
+import { NavController, IonInput, ToastController } from '@ionic/angular';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @Component({
@@ -9,7 +9,7 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
 })
 export class RegisterPage implements OnInit {
 
-  constructor( private navCtrl: NavController, public keyboard: Keyboard ) { }
+  constructor( private navCtrl: NavController, public keyboard: Keyboard, private toastCtrl: ToastController ) { }
   
   //this.Keyboard.hideFormAcessoryBar(true);
   
@@ -22,9 +22,18 @@ export class RegisterPage implements OnInit {
 
   ngOnInit() {
   }
+  async presentToast( message: string ) {
+    const toast = await this.toastCtrl.create({
+      message,
+      duration: 2000
+    });
+    toast.present();
+  }
   onClick() { 
     this.navCtrl.navigateForward("/thanks");
+    this.presentToast('Cadastrado com sucesso!');
     console.log(this.usuario);
+
   }
   show() {
     this.myInput.setFocus();
@@ -34,7 +43,7 @@ export class RegisterPage implements OnInit {
 
     setTimeout(() => {
       this.keyboard.hide();
-    }, 5000);
+    }, 3000);
   }
 }
 
