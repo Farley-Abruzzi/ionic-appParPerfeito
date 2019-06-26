@@ -1,0 +1,23 @@
+<ion-content padding fullscreen>
+  <ion-grid>
+    <ion-row class="image-position" text-center>
+      <ion-col>
+          <img id="ion-img" src="assets/img/Blood50.gif"/>
+      </ion-col>
+    </ion-row>
+    <ion-row class="spinner-position" text-center>
+      <ion-col>
+          <ion-spinner color="icon" name="dots"></ion-spinner>
+      </ion-col>
+    </ion-row>
+    <ion-row class="button-proximo-position" text-center>
+      <ion-col>
+        <ion-button class="animated bounceInLeft delay-2s" size="default" (click)="onClick()"
+          color="button">
+          <ion-icon mode="ios" slot="end" name="arrow-forward"></ion-icon>
+          Proximo
+        </ion-button>
+      </ion-col>
+    </ion-row>   
+  </ion-grid>
+</ion-content>

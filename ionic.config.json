@@ -1,0 +1,8 @@
+{
+  "name": "appGlpv",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "c7f00f95"
+}

@@ -1,0 +1,19 @@
+ion-content{
+    --background: none;
+    background-image: url('/assets/telas/sms-10.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button-proximo-position {
+    position: fixed;
+    bottom: 10%;
+    right: 0px;
+    left: 0px;
+  }
+  .spinner-position {
+    position: fixed;
+    bottom: 15%;
+    right: 0px;
+    left: 0px;
+  }

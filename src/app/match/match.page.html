@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-grid padding fullscreen>
+    <ion-row class="row-position">
+      <ion-col size="12">
+        <ion-slides (ionSlideNextStart)="proxSlide()" class="slide-full" class="animated bounceInRight delay-1s" #mySlider>
+          <ion-slide *ngFor="let slide of slides">
+            <ion-card class="ion-card" mode="ios">
+              <img src="{{ slide.img }}" />
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+    <div text-center>
+      <ion-row>
+        <ion-col>
+          <ion-button id="Nao" shape="round" fill="clear" expand="small" (click)="slideNext()"
+            style="width : 23% ; height : 15%">
+            <img src="assets/icon/BT_NAO_INATIVO.png" />
+          </ion-button>
+          <ion-button id="Sim" shape="round" fill="clear" expand="small" (click)="slideNext()"
+            style="width : 23% ; height : 15%">
+            <img src="assets/icon/BT_SIM_INATIVO.png" />
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>

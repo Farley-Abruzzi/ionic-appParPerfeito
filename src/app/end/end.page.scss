@@ -1,0 +1,27 @@
+ion-content {
+    --background: none;
+    background-image: url('/assets/telas/paciente-5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.button-proximo-position {
+    position: fixed;
+    bottom: 10%;
+    right: 0px;
+    left: 0px;
+  }
+  .spinner-position {
+    position: fixed;
+    bottom: 15%;
+    right: 0px;
+    left: 0px;
+  }
+.image-position {
+    position: fixed;
+    bottom: 75%;
+    right: 0px;
+    left: 0px;
+}
+

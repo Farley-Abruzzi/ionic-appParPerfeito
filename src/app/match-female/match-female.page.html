@@ -1,0 +1,83 @@
+<ion-content>
+  <ion-grid padding fullscreen>
+    <ion-row class="row-position">
+      <ion-col size="12">
+        <ion-slides (ionSlideNextStart)="proxSlide()" class="slide-full" class="animated bounceInRight delay-1s" #mySlider>
+          <ion-slide *ngFor="let slide of slides">
+            <ion-card mode="ios">
+              <img [src]="slide.img" />
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+    <div text-center>
+      <ion-row>
+        <ion-col>
+          <ion-button id="Nao" shape="round" fill="clear" expand="small" (click)="slideNext()"
+            style="width : 23% ; height : 15%">
+            <img src="assets/icon/BT_NAO_INATIVO.png" />
+          </ion-button>
+          <ion-button id="Sim" shape="round" fill="clear" expand="small" (click)="slideNext()"
+            style="width : 23% ; height : 15%">
+            <img src="assets/icon/BT_SIM_INATIVO.png" />
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>
+
+<!--<ion-content>
+    <mbsc-page>
+        
+        <mbsc-listview [options]="cycleSettings" class="custom-card-deck">
+        
+            <mbsc-listview-item>
+                <mbsc-card class="custom-card custom-card-rotate-right">
+                    
+                    <mbsc-card-content>
+                        <img draggable="false" src="assets/img/match-female-1.jpg">
+                    </mbsc-card-content>
+                </mbsc-card>
+            </mbsc-listview-item>
+        
+            <mbsc-listview-item>
+                <mbsc-card class="custom-card custom-card-rotate-left">
+                    
+                    <mbsc-card-content>
+                        <img draggable="false" src="assets/img/match-female-2.jpg">
+                    </mbsc-card-content>
+                </mbsc-card>
+            </mbsc-listview-item>
+        
+            <mbsc-listview-item>
+                <mbsc-card class="custom-card">
+                    
+                    <mbsc-card-content>
+                        <img draggable="false" src="assets/img/match-female-3.jpg">
+                    </mbsc-card-content>
+                </mbsc-card>
+            </mbsc-listview-item>
+        
+            <mbsc-listview-item>
+                <mbsc-card class="custom-card custom-card-rotate-right">
+                    
+                    <mbsc-card-content>
+                        <img draggable="false" src="assets/img/match-female-4.jpg">
+                    </mbsc-card-content>
+                </mbsc-card>
+            </mbsc-listview-item>
+        
+            <mbsc-listview-item>
+                <mbsc-card class="custom-card custom-card-rotate-left">
+                    
+                    <mbsc-card-content>
+                        <img draggable="false" src="assets/img/match-female-5.jpg">
+                    </mbsc-card-content>
+                </mbsc-card>
+            </mbsc-listview-item>
+        
+        </mbsc-listview>
+    </mbsc-page>
+</ion-content>-->
