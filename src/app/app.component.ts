@@ -27,37 +27,3 @@ export class AppComponent {
     });
   }
 }
-
-//  listSettings: MbscListviewOptions = {
-//    stages: [{
-//        percent: -20,
-//        action: (event, inst) => {
-//            inst.remove(event.target);
-//            return false;
-//        }
-//    }, {
-//        percent: 20,
-//        action: (event, inst) => {
-//            inst.remove(event.target);
-//            return false;
-//        }
-//    }],
-//    actionable: false
-//};
-//
-//cycleSettings: MbscListviewOptions = {
-//    stages: [{
-//        percent: -20,
-//        action: (event, inst) => {
-//            inst.move(event.target, 0);
-//            return false;
-//        }
-//    }, {
-//        percent: 20,
-//        action: (event, inst) => {
-//            inst.move(event.target, 0);
-//            return false;
-//        }
-//    }],
-//    actionable: false
-//};

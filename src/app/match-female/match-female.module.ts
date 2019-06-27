@@ -1,4 +1,3 @@
-import { MbscModule } from '@mobiscroll/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -16,8 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ 
-    MbscModule, 
+  imports: [
     CommonModule,
     FormsModule,
     IonicModule,
