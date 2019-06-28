@@ -18,7 +18,6 @@ export class IncompatiblePage implements OnInit {
 
   }
   onClick() {
-    setTimeout(stop);
     this.navCtrl.navigateForward("/information");
   }
   home(){

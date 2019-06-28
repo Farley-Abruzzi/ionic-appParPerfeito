@@ -1,26 +1,26 @@
 ion-content {
-    --background: none;
-    background-image: url('/assets/telas/ops-3.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+  --background: none;
+  background-image: url("/assets/telas/ops-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 .button-proximo-position {
-    position: fixed;
-    bottom: 10%;
-    right: 0px;
-    left: 0px;
-  }
-  .spinner-position {
-    position: fixed;
-    bottom: 15%;
-    right: 0px;
-    left: 0px;
-  }
-  .button-restart{
-    position: fixed; 
-    bottom: 2%;
-    //right: 0px;
-    left: 5px;
-  }
+  position: fixed;
+  bottom: 10%;
+  right: 0px;
+  left: 0px;
+}
+.spinner-position {
+  position: fixed;
+  bottom: 15%;
+  right: 0px;
+  left: 0px;
+}
+.button-restart {
+  position: fixed;
+  bottom: 2%;
+  //right: 0px;
+  left: 5px;
+}
