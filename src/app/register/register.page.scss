@@ -1,4 +1,4 @@
-ion-grid{
+ion-content {
     --background: none;
     background-image: url('/assets/telas/cadastro-9.jpg');
     background-position: center;
@@ -6,7 +6,7 @@ ion-grid{
     background-size: cover;
     height: 100%;
 }
-ion-item{
+ion-item {
     --border-radius: 20px;
     color: lightcoral;
     --highlight-height: 1px;
@@ -14,10 +14,10 @@ ion-item{
     width: 60%;
     margin-left: 20%;
 }
-.ion-item-2{
+.ion-item-2 {
     margin-top: 15px;
 }
-ion-button{
+ion-button {
     --border-radius: 10px;
     --color: lightcoral;
     --background: white;
